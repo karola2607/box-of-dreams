@@ -1,8 +1,8 @@
 import "./App.css";
-import Home from "./Home/Home.js";
-import Info from "./Info/Info.js";
+import Home from "./components/Home/Home.js";
+import Info from "./components/Info/Info.js";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
-import MainLayout from "./MainLayout/MainLayout.js";
+import MainLayout from "./components/MainLayout/MainLayout.js";
 
 function App() {
   return (
