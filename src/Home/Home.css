@@ -1,0 +1,12 @@
+#present {
+  height: 70vmin;
+  display: block;
+  border-radius: 15%;
+  margin-top: 20px;
+}
+
+#headerTitel {
+  font-family: Princess Sofia;
+  font-size: 80px;
+  margin-top: 0;
+}
