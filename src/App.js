@@ -6,7 +6,7 @@ import MainLayout from "./components/MainLayout/MainLayout.js";
 
 function App() {
   return (
-    <div className="App">
+    <div>
       <header className="App-header">
         <BrowserRouter>
           <MainLayout>

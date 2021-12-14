@@ -8,10 +8,10 @@ import Icon from "../Icon/Icon.js";
 class Header extends React.Component {
   render() {
     return (
-      <header className={styles.component}>
+      <header className="component">
         <Container>
-          <div className={styles.wrapper}>
-            <Link to="/" className={styles.logo}>
+          <div className="wrapper">
+            <Link to="/" className="logo">
               <Icon name={settings.defaultHeaderIcon} />
             </Link>
             <nav>
