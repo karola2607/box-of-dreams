@@ -1,0 +1,14 @@
+@import "../../styles/settings.scss";
+
+.card {
+  position: relative;
+  background: $color-light;
+  opacity: 80%;
+  border: 1px solid lighten($color-dark, 60%);
+  padding: $base-size;
+  margin: 0 0 $base-size 0;
+  border-radius: $radius;
+  width: 160px;
+  height: 160px;
+  margin: 20px;
+}

@@ -1,0 +1,18 @@
+/*.extraBox {
+  max-width: 1400px;
+  display: flex;
+  align-content: center;
+  position: absolute;
+}
+*/
+
+.boxes {
+  margin: 0 15% 0 15%;
+  display: flex;
+  flex: 1;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
