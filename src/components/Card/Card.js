@@ -1,10 +1,13 @@
 import styles from "./Card.scss";
 import React from "react";
-import { settings } from "../../data/dataStore";
+import PropTypes from "prop-types";
 
 class Card extends React.Component {
+  static propTypes = {
+    title: PropTypes.node,
+  };
   render() {
-    return <section className="card">{settings.cardCreatorText}</section>;
+    return <section className="card">{this.props.title}</section>;
   }
 }
 

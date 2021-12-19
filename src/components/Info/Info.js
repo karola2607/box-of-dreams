@@ -1,10 +1,11 @@
 import React from "react";
 import Container from "../Container/Container";
+import style from "./Info.scss";
 
 const Info = () => (
   <Container>
-    <h2>Info</h2>
-    <p>
+    <h2 className="info">Info</h2>
+    <p className="info-text">
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
       tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
       veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea

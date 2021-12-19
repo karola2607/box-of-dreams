@@ -1,0 +1,15 @@
+@import "../../styles/settings.scss";
+
+.info {
+  font-family: Princess Sofia;
+  text-align: center;
+  font-size: 70px;
+  color: $color-dark;
+}
+
+.info-text {
+  text-align: center;
+  margin: 40px;
+  font-size: 30px;
+  color: $color-light;
+}
