@@ -10,3 +10,5 @@ export const settings = {
 export const pageContents = {
   title: "Buy me a present!",
 };
+
+export const cards = [];
