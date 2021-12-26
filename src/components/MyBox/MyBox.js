@@ -68,16 +68,16 @@ class MyBox extends React.Component {
   render() {
     return (
       <Container>
-        <div className="boxes">
-          {this.state.cards.map(({ key, title, ...cardProps }) => (
-            <Card key={key} {...cardProps} title={title} />
-          ))}
-        </div>
-        <div className={styles.creator}>
+        <div>
           <Creator
             text={settings.columnCreatorText}
             action={(title) => this.addCard(title)}
           />
+        </div>
+        <div className="boxes">
+          {this.state.cards.map(({ key, title, ...cardProps }) => (
+            <Card key={key} {...cardProps} title={title} />
+          ))}
         </div>
       </Container>
     );

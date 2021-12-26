@@ -8,7 +8,7 @@ class Home extends React.Component {
     return (
       <Container>
         <div className="Home">
-          <header className="Home-header">
+          <header className="homeHeader">
             <img id="present" src="https://i.postimg.cc/pr9b3sjV/present.gif" />
             <p id="headerTitel">{pageContents.title}</p>
           </header>

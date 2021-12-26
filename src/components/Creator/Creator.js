@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./Creator.scss";
+import "./Creator.scss";
 import Button from "../Button/Button";
 import PropTypes from "prop-types";
 
@@ -45,7 +45,7 @@ class Creator extends React.Component {
 
   render() {
     return (
-      <div className="component">
+      <div className="creator">
         <input
           type="text"
           placeholder={this.props.text}
@@ -54,8 +54,7 @@ class Creator extends React.Component {
         />
         <div
           className={
-            styles.buttons +
-            (this.state.visibleButtons ? " " + styles.buttonsShown : "")
+            "buttons" + (this.state.visibleButtons ? " " + "buttonsShown" : "")
           }
         >
           <Button onClick={this.handleOK}>OK</Button>
