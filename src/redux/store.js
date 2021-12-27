@@ -8,9 +8,7 @@ const initialState = {
 };
 
 // define reducers
-const reducers = {
-  cards: cardsReducer,
-};
+const reducers = {};
 
 // add blank reducers for initial state properties without reducers
 Object.keys(initialState).forEach((item) => {

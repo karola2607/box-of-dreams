@@ -1,52 +1,10 @@
 import React from "react";
 import Container from "../Container/Container";
 import Card from "../Card/Card.js";
-import styles from "./MyBox.scss";
+import "./MyBox.scss";
 import { settings, cards } from "../../data/dataStore";
 import PropTypes from "prop-types";
 import Creator from "../Creator/Creator.js";
-
-/*const MyBox = () => (
-  <Container>
-    <div className="boxes">
-      <Card title={settings.cardCreatorText} />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-    </div>
-  </Container>
-);
-
-
-const MyBox = () => {
-  const size = 20;
-  return (
-    <div className="boxes">
-      {Array(size)
-        .fill()
-        .map((x, i) => (
-          <Card key={i} title={settings.cardCreatorText} />
-        ))}
-    </div>
-  );
-};
-*/
 
 class MyBox extends React.Component {
   state = {
