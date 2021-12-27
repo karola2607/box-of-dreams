@@ -1,6 +1,6 @@
 import React from "react";
 import Container from "../Container/Container";
-import styles from "./Home.scss";
+import "./Home.scss";
 import { pageContents } from "../../data/dataStore";
 
 class Home extends React.Component {
@@ -9,7 +9,7 @@ class Home extends React.Component {
       <Container>
         <div className="Home">
           <header className="homeHeader">
-            <img id="present" src="https://i.postimg.cc/pr9b3sjV/present.gif" />
+            <img id="present" src={pageContents.image} />
             <p id="headerTitel">{pageContents.title}</p>
           </header>
         </div>
