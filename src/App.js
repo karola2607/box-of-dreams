@@ -1,7 +1,7 @@
 import "./App.css";
 import Home from "./components/Home/HomeContainer.js";
 import Info from "./components/Info/Info.js";
-import MyBox from "./components/MyBox/MyBox.js";
+import MyBox from "./components/MyBox/MyBoxContainer.js";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import MainLayout from "./components/MainLayout/MainLayout.js";
 

@@ -7,34 +7,21 @@ import PropTypes from "prop-types";
 import Creator from "../Creator/Creator.js";
 
 class MyBox extends React.Component {
-  state = {
-    cards: cards || [],
+  static propTypes = {
+    cards: PropTypes.array,
+    addCard: PropTypes.func,
   };
-  addCard(title) {
-    this.setState((state) => ({
-      cards: [
-        ...state.cards,
-        {
-          key: state.cards.length
-            ? state.cards[state.cards.length - 1].key + 1
-            : 0,
-          title,
-        },
-      ],
-    }));
-  }
+
   render() {
+    const { cards, addCard } = this.props;
     return (
       <Container>
         <div>
-          <Creator
-            text={settings.columnCreatorText}
-            action={(title) => this.addCard(title)}
-          />
+          <Creator text={settings.columnCreatorText} action={addCard} />
         </div>
         <div className="boxes">
-          {this.state.cards.map(({ key, title, ...cardProps }) => (
-            <Card key={key} {...cardProps} title={title} />
+          {cards.map((cards) => (
+            <Card key={cards.title} {...cards} />
           ))}
         </div>
       </Container>
