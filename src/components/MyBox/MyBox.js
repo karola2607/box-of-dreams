@@ -6,27 +6,21 @@ import { settings, cards } from "../../data/dataStore";
 import PropTypes from "prop-types";
 import Creator from "../Creator/Creator.js";
 
-class MyBox extends React.Component {
-  static propTypes = {
-    cards: PropTypes.array,
-    addCard: PropTypes.func,
-  };
+const MyBox = (props) => (
+  <Container>
+    <div>
+      <Creator text={settings.columnCreatorText} action={props.addCard} />
+    </div>
+    <div className="boxes">
+      {props.cards.map((cards) => (
+        <Card key={cards.title} {...cards} />
+      ))}
+    </div>
+  </Container>
+);
 
-  render() {
-    const { cards, addCard } = this.props;
-    return (
-      <Container>
-        <div>
-          <Creator text={settings.columnCreatorText} action={addCard} />
-        </div>
-        <div className="boxes">
-          {cards.map((cards) => (
-            <Card key={cards.title} {...cards} />
-          ))}
-        </div>
-      </Container>
-    );
-  }
-}
-
+MyBox.propTypes = {
+  cards: PropTypes.array,
+  addCard: PropTypes.func,
+};
 export default MyBox;
